@@ -10,7 +10,8 @@ import {Transaction } from "./Transaction";
         <div>
             <h3> Add Transactions</h3>
             <ul className="list">
-               < Transaction />
+                {transactions.map(transaction => <Transaction  key= {transaction.id} transaction={transaction}/>)}
+            
             </ul>
         </div>
     )
