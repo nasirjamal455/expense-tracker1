@@ -10,8 +10,8 @@ export const AddTransaction = () => {
         e.preventDefault();
         const newTransaction={
             id:Math.floor(Math.random()*10000),
-            text:+text,
-            amount: +amount
+            text,
+            amount: + amount
         }
         addTransaction(newTransaction)
             }
